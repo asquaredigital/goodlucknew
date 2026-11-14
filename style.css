@@ -20,11 +20,46 @@ a { color: inherit; }
 .site-header { background: var(--cream); position: relative; z-index: 1000; }
 .brand { display: inline-flex; align-items: center; padding: 0; margin: 0; }
 .brand-logo { display: block; width: 190px; height: 38px; object-fit: contain; object-position: left center; }
-.menu-label { display: inline-block; font-size: 15px; font-weight: 500; }
 .navbar-nav .nav-link { color: var(--forest-dark); font-size: 14px; font-weight: 500; }
 .navbar-nav .nav-link:hover, .text-link:hover, .service-body a:hover { color: #708a4a; }
 .navbar-toggler { border: 1px solid var(--forest); border-radius: 4px; padding: 9px 12px; }
 .navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(25,63,50,.2); }
+
+/* Compact mobile hamburger navigation control */
+.hamburger-button {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: var(--lime);
+}
+.hamburger-button:hover,
+.hamburger-button:focus {
+  background: #cddda0;
+}
+.hamburger-icon {
+  width: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hamburger-icon span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--forest);
+}
+.hamburger-button:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 3px;
+}
 .btn { border-radius: 4px; font-weight: 600; font-size: 14px; padding: 13px 22px; }
 .btn-green { background: var(--forest); color: #fff; border: 1px solid var(--forest); }
 .btn-green:hover, .btn-green:focus { background: #102e25; border-color: #102e25; color: #fff; }
@@ -130,6 +165,42 @@ textarea.form-control { min-height: 120px; }
   .brand-logo { width: 190px; height: 38px; }
   .navbar-toggler { display: inline-flex; align-items: center; justify-content: center; width: 73px; height: 52px; padding: 0 12px; border: 0; border-radius: 4px; background: var(--lime); color: var(--forest); }
   .navbar-toggler:focus { box-shadow: 0 0 0 3px rgba(25,63,50,.2); }
+
+/* Compact mobile hamburger navigation control */
+.hamburger-button {
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: 0;
+  border-radius: 4px;
+  background: var(--lime);
+}
+.hamburger-button:hover,
+.hamburger-button:focus {
+  background: #cddda0;
+}
+.hamburger-icon {
+  width: 21px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.hamburger-icon span {
+  display: block;
+  width: 21px;
+  height: 2px;
+  border-radius: 2px;
+  background: var(--forest);
+}
+.hamburger-button:focus-visible {
+  outline: 3px solid var(--forest);
+  outline-offset: 3px;
+}
   .navbar-toggler-icon { display: none; }
   .navbar-collapse { padding: 14px 0 4px; }
   .navbar-nav { gap: 0 !important; }
