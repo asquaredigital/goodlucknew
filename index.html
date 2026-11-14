@@ -28,11 +28,11 @@
   <header class="site-header">
     <nav class="navbar navbar-expand-lg container-xl py-3" aria-label="Main navigation">
       <a class="navbar-brand brand" href="#home" aria-label="Good Luck Care home">
-        <img src="logo.png" class="brand-logo" alt="Good Luck Care — gentle loving care at home">
+        <img src="logo.png" alt="Good Luck Care — gentle loving care at home" class="brand-logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
               aria-controls="mainNav" aria-expanded="false" aria-label="Open main navigation">
-        <span class="navbar-toggler-icon"></span>
+        <span class="menu-label">Menu</span>
       </button>
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
@@ -51,8 +51,8 @@
   <main id="main-content">
     <section class="hero-section section-pad" id="home">
       <div class="container-xl">
-        <div class="row align-items-center g-4 g-lg-5">
-          <div class="col-lg-6 hero-copy">
+        <div class="row align-items-center g-4 g-lg-5 hero-row">
+          <div class="col-lg-6 order-2 order-lg-1 hero-copy">
             <p class="eyebrow">GOOD LUCK CARE LIMITED</p>
             <h1>Your home.<br>Your life.<br><em>Our care.</em></h1>
             <p class="hero-lead">Thoughtful, personal care that helps you live well in the place you know best.</p>
@@ -63,10 +63,10 @@
             <p class="reassurance">For you, for your family, for peace of mind.</p>
             <p class="call-line">Prefer to talk? <a href="tel:+442030112119">Call 020 3011 2119</a></p>
           </div>
-          <div class="col-lg-6">
+          <div class="col-lg-6 order-1 order-lg-2 hero-image-column">
             <figure class="hero-figure mb-0">
-              <img src="https://images.pexels.com/photos/7551622/pexels-photo-7551622.jpeg?auto=compress&cs=tinysrgb&w=1500"
-                   alt="A care professional supporting an older man at home" fetchpriority="high">
+              <img src="https://images.pexels.com/photos/7551614/pexels-photo-7551614.jpeg?auto=compress&cs=tinysrgb&w=1500"
+                   alt="A care professional supporting an older person at home" fetchpriority="high">
               <figcaption>CARE, COMFORT AND CONNECTION AT HOME</figcaption>
             </figure>
           </div>
@@ -182,12 +182,9 @@
             <h3>CQC ratings and registration</h3>
             <p>Official rating, registration details and inspection report will be displayed here after verification with the provider and the Care Quality Commission.</p>
           </div>
-          <div class="cqc-widget-wrap" aria-label="Care Quality Commission rating for Good Luck Care">
+          <div class="cqc-widget-wrap text-center">
             <script type="text/javascript" src="https://www.cqc.org.uk/sites/all/modules/custom/cqc_widget/widget.js?data-id=1-2703145341&amp;data-host=www.cqc.org.uk&amp;type=location"></script>
-            <noscript>
-              <p>Please enable JavaScript to view the Care Quality Commission rating.</p>
-              <a href="https://www.cqc.org.uk/location/1-2703145341" target="_blank" rel="noopener noreferrer">View Good Luck Care on the CQC website</a>
-            </noscript>
+            <noscript><a href="https://www.cqc.org.uk/location/1-2703145341" target="_blank" rel="noopener">View Good Luck Care's location information on the Care Quality Commission website.</a></noscript>
           </div>
         </div>
       </div>
@@ -268,7 +265,6 @@
                   <input class="btn-check" type="radio" name="preferredContact" id="contactEmail" value="Email">
                   <label class="choice-btn" for="contactEmail">Email</label>
                 </div>
-                <p class="field-hint mb-0" id="contactPreferenceHint">A telephone number is required for a phone response.</p>
               </fieldset>
               <div class="row g-3">
                 <div class="col-md-6">
@@ -277,12 +273,12 @@
                   <div class="invalid-feedback">Please enter your name.</div>
                 </div>
                 <div class="col-md-6">
-                  <label class="form-label" for="telephone">Telephone <span class="required-mark" aria-hidden="true">*</span></label>
+                  <label class="form-label" for="telephone">Telephone <span aria-hidden="true">*</span></label>
                   <input class="form-control" id="telephone" name="telephone" type="tel" autocomplete="tel" required>
                   <div class="invalid-feedback">Please enter a telephone number.</div>
                 </div>
                 <div class="col-12">
-                  <label class="form-label" for="email">Email address <span class="email-required-mark d-none" aria-hidden="true">*</span><span class="email-optional-label">(optional)</span></label>
+                  <label class="form-label" for="email">Email address (optional)</label>
                   <input class="form-control" id="email" name="email" type="email" autocomplete="email">
                   <div class="invalid-feedback">Please enter a valid email address.</div>
                 </div>
@@ -305,7 +301,7 @@
     <div class="container-xl">
       <div class="row g-4 g-lg-5 footer-main">
         <div class="col-lg-4">
-          <a class="footer-brand-logo" href="#home" aria-label="Good Luck Care home"><img src="logo.png" alt="Good Luck Care — gentle loving care at home" loading="lazy"></a>
+          <a class="footer-brand" href="#home" aria-label="Good Luck Care home"><img src="logo.png" alt="Good Luck Care — gentle loving care at home"></a>
           <p>Thoughtful, personal care that helps you live well in the place you know best.</p>
         </div>
         <div class="col-6 col-lg-2">
